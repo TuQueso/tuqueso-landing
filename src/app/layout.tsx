@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { WhatsAppFloating } from "@/components/WhatsAppFloating";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="es-CL" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         {children}
+        <WhatsAppFloating />
         <Analytics />
       </body>
     </html>
